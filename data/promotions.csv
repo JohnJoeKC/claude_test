@@ -1,0 +1,176 @@
+promo_id,promo_name,shop_id,category,start_date,end_date,discount_pct,promo_type,is_brand_wide
+1,Veganuary,1,Snacks,2024-01-02,2024-01-31,15,Seasonal Special,True
+1,Veganuary,2,Snacks,2024-01-02,2024-01-31,15,Seasonal Special,True
+1,Veganuary,3,Snacks,2024-01-02,2024-01-31,15,Seasonal Special,True
+1,Veganuary,4,Snacks,2024-01-02,2024-01-31,15,Seasonal Special,True
+1,Veganuary,5,Snacks,2024-01-02,2024-01-31,15,Seasonal Special,True
+1,Veganuary,6,Snacks,2024-01-02,2024-01-31,15,Seasonal Special,True
+1,Veganuary,7,Snacks,2024-01-02,2024-01-31,15,Seasonal Special,True
+1,Veganuary,8,Snacks,2024-01-02,2024-01-31,15,Seasonal Special,True
+1,Veganuary,9,Snacks,2024-01-02,2024-01-31,15,Seasonal Special,True
+1,Veganuary,10,Snacks,2024-01-02,2024-01-31,15,Seasonal Special,True
+2,Veganuary,1,Snacks,2025-01-02,2025-01-31,15,Seasonal Special,True
+2,Veganuary,2,Snacks,2025-01-02,2025-01-31,15,Seasonal Special,True
+2,Veganuary,3,Snacks,2025-01-02,2025-01-31,15,Seasonal Special,True
+2,Veganuary,4,Snacks,2025-01-02,2025-01-31,15,Seasonal Special,True
+2,Veganuary,5,Snacks,2025-01-02,2025-01-31,15,Seasonal Special,True
+2,Veganuary,6,Snacks,2025-01-02,2025-01-31,15,Seasonal Special,True
+2,Veganuary,7,Snacks,2025-01-02,2025-01-31,15,Seasonal Special,True
+2,Veganuary,8,Snacks,2025-01-02,2025-01-31,15,Seasonal Special,True
+2,Veganuary,9,Snacks,2025-01-02,2025-01-31,15,Seasonal Special,True
+2,Veganuary,10,Snacks,2025-01-02,2025-01-31,15,Seasonal Special,True
+3,Valentine's,1,Bakery,2024-02-10,2024-02-14,10,Seasonal Special,True
+3,Valentine's,2,Bakery,2024-02-10,2024-02-14,10,Seasonal Special,True
+3,Valentine's,3,Bakery,2024-02-10,2024-02-14,10,Seasonal Special,True
+3,Valentine's,4,Bakery,2024-02-10,2024-02-14,10,Seasonal Special,True
+3,Valentine's,5,Bakery,2024-02-10,2024-02-14,10,Seasonal Special,True
+3,Valentine's,6,Bakery,2024-02-10,2024-02-14,10,Seasonal Special,True
+3,Valentine's,7,Bakery,2024-02-10,2024-02-14,10,Seasonal Special,True
+3,Valentine's,8,Bakery,2024-02-10,2024-02-14,10,Seasonal Special,True
+3,Valentine's,9,Bakery,2024-02-10,2024-02-14,10,Seasonal Special,True
+3,Valentine's,10,Bakery,2024-02-10,2024-02-14,10,Seasonal Special,True
+4,Valentine's,1,Bakery,2025-02-10,2025-02-14,10,Seasonal Special,True
+4,Valentine's,2,Bakery,2025-02-10,2025-02-14,10,Seasonal Special,True
+4,Valentine's,3,Bakery,2025-02-10,2025-02-14,10,Seasonal Special,True
+4,Valentine's,4,Bakery,2025-02-10,2025-02-14,10,Seasonal Special,True
+4,Valentine's,5,Bakery,2025-02-10,2025-02-14,10,Seasonal Special,True
+4,Valentine's,6,Bakery,2025-02-10,2025-02-14,10,Seasonal Special,True
+4,Valentine's,7,Bakery,2025-02-10,2025-02-14,10,Seasonal Special,True
+4,Valentine's,8,Bakery,2025-02-10,2025-02-14,10,Seasonal Special,True
+4,Valentine's,9,Bakery,2025-02-10,2025-02-14,10,Seasonal Special,True
+4,Valentine's,10,Bakery,2025-02-10,2025-02-14,10,Seasonal Special,True
+5,Summer Refresh,1,Cold Drinks,2024-06-01,2024-08-31,20,20% Off,True
+5,Summer Refresh,2,Cold Drinks,2024-06-01,2024-08-31,20,20% Off,True
+5,Summer Refresh,3,Cold Drinks,2024-06-01,2024-08-31,20,20% Off,True
+5,Summer Refresh,4,Cold Drinks,2024-06-01,2024-08-31,20,20% Off,True
+5,Summer Refresh,5,Cold Drinks,2024-06-01,2024-08-31,20,20% Off,True
+5,Summer Refresh,6,Cold Drinks,2024-06-01,2024-08-31,20,20% Off,True
+5,Summer Refresh,7,Cold Drinks,2024-06-01,2024-08-31,20,20% Off,True
+5,Summer Refresh,8,Cold Drinks,2024-06-01,2024-08-31,20,20% Off,True
+5,Summer Refresh,9,Cold Drinks,2024-06-01,2024-08-31,20,20% Off,True
+5,Summer Refresh,10,Cold Drinks,2024-06-01,2024-08-31,20,20% Off,True
+6,Summer Refresh,1,Cold Drinks,2025-06-01,2025-08-31,20,20% Off,True
+6,Summer Refresh,2,Cold Drinks,2025-06-01,2025-08-31,20,20% Off,True
+6,Summer Refresh,3,Cold Drinks,2025-06-01,2025-08-31,20,20% Off,True
+6,Summer Refresh,4,Cold Drinks,2025-06-01,2025-08-31,20,20% Off,True
+6,Summer Refresh,5,Cold Drinks,2025-06-01,2025-08-31,20,20% Off,True
+6,Summer Refresh,6,Cold Drinks,2025-06-01,2025-08-31,20,20% Off,True
+6,Summer Refresh,7,Cold Drinks,2025-06-01,2025-08-31,20,20% Off,True
+6,Summer Refresh,8,Cold Drinks,2025-06-01,2025-08-31,20,20% Off,True
+6,Summer Refresh,9,Cold Drinks,2025-06-01,2025-08-31,20,20% Off,True
+6,Summer Refresh,10,Cold Drinks,2025-06-01,2025-08-31,20,20% Off,True
+7,Back to School,1,Sandwiches,2024-09-02,2024-09-20,10,Meal Deal,True
+7,Back to School,2,Sandwiches,2024-09-02,2024-09-20,10,Meal Deal,True
+7,Back to School,3,Sandwiches,2024-09-02,2024-09-20,10,Meal Deal,True
+7,Back to School,4,Sandwiches,2024-09-02,2024-09-20,10,Meal Deal,True
+7,Back to School,5,Sandwiches,2024-09-02,2024-09-20,10,Meal Deal,True
+7,Back to School,6,Sandwiches,2024-09-02,2024-09-20,10,Meal Deal,True
+7,Back to School,7,Sandwiches,2024-09-02,2024-09-20,10,Meal Deal,True
+7,Back to School,8,Sandwiches,2024-09-02,2024-09-20,10,Meal Deal,True
+7,Back to School,9,Sandwiches,2024-09-02,2024-09-20,10,Meal Deal,True
+7,Back to School,10,Sandwiches,2024-09-02,2024-09-20,10,Meal Deal,True
+8,Back to School,1,Sandwiches,2025-09-01,2025-09-19,10,Meal Deal,True
+8,Back to School,2,Sandwiches,2025-09-01,2025-09-19,10,Meal Deal,True
+8,Back to School,3,Sandwiches,2025-09-01,2025-09-19,10,Meal Deal,True
+8,Back to School,4,Sandwiches,2025-09-01,2025-09-19,10,Meal Deal,True
+8,Back to School,5,Sandwiches,2025-09-01,2025-09-19,10,Meal Deal,True
+8,Back to School,6,Sandwiches,2025-09-01,2025-09-19,10,Meal Deal,True
+8,Back to School,7,Sandwiches,2025-09-01,2025-09-19,10,Meal Deal,True
+8,Back to School,8,Sandwiches,2025-09-01,2025-09-19,10,Meal Deal,True
+8,Back to School,9,Sandwiches,2025-09-01,2025-09-19,10,Meal Deal,True
+8,Back to School,10,Sandwiches,2025-09-01,2025-09-19,10,Meal Deal,True
+9,Christmas Bundle,1,Bakery,2024-12-01,2024-12-24,15,Seasonal Special,True
+9,Christmas Bundle,2,Bakery,2024-12-01,2024-12-24,15,Seasonal Special,True
+9,Christmas Bundle,3,Bakery,2024-12-01,2024-12-24,15,Seasonal Special,True
+9,Christmas Bundle,4,Bakery,2024-12-01,2024-12-24,15,Seasonal Special,True
+9,Christmas Bundle,5,Bakery,2024-12-01,2024-12-24,15,Seasonal Special,True
+9,Christmas Bundle,6,Bakery,2024-12-01,2024-12-24,15,Seasonal Special,True
+9,Christmas Bundle,7,Bakery,2024-12-01,2024-12-24,15,Seasonal Special,True
+9,Christmas Bundle,8,Bakery,2024-12-01,2024-12-24,15,Seasonal Special,True
+9,Christmas Bundle,9,Bakery,2024-12-01,2024-12-24,15,Seasonal Special,True
+9,Christmas Bundle,10,Bakery,2024-12-01,2024-12-24,15,Seasonal Special,True
+10,Christmas Bundle,1,Bakery,2025-12-01,2025-12-24,15,Seasonal Special,True
+10,Christmas Bundle,2,Bakery,2025-12-01,2025-12-24,15,Seasonal Special,True
+10,Christmas Bundle,3,Bakery,2025-12-01,2025-12-24,15,Seasonal Special,True
+10,Christmas Bundle,4,Bakery,2025-12-01,2025-12-24,15,Seasonal Special,True
+10,Christmas Bundle,5,Bakery,2025-12-01,2025-12-24,15,Seasonal Special,True
+10,Christmas Bundle,6,Bakery,2025-12-01,2025-12-24,15,Seasonal Special,True
+10,Christmas Bundle,7,Bakery,2025-12-01,2025-12-24,15,Seasonal Special,True
+10,Christmas Bundle,8,Bakery,2025-12-01,2025-12-24,15,Seasonal Special,True
+10,Christmas Bundle,9,Bakery,2025-12-01,2025-12-24,15,Seasonal Special,True
+10,Christmas Bundle,10,Bakery,2025-12-01,2025-12-24,15,Seasonal Special,True
+11,Winter Warmer,1,Coffee,2024-11-01,2024-11-30,10,Loyalty Double Points,True
+11,Winter Warmer,2,Coffee,2024-11-01,2024-11-30,10,Loyalty Double Points,True
+11,Winter Warmer,3,Coffee,2024-11-01,2024-11-30,10,Loyalty Double Points,True
+11,Winter Warmer,4,Coffee,2024-11-01,2024-11-30,10,Loyalty Double Points,True
+11,Winter Warmer,5,Coffee,2024-11-01,2024-11-30,10,Loyalty Double Points,True
+11,Winter Warmer,6,Coffee,2024-11-01,2024-11-30,10,Loyalty Double Points,True
+11,Winter Warmer,7,Coffee,2024-11-01,2024-11-30,10,Loyalty Double Points,True
+11,Winter Warmer,8,Coffee,2024-11-01,2024-11-30,10,Loyalty Double Points,True
+11,Winter Warmer,9,Coffee,2024-11-01,2024-11-30,10,Loyalty Double Points,True
+11,Winter Warmer,10,Coffee,2024-11-01,2024-11-30,10,Loyalty Double Points,True
+12,Winter Warmer,1,Coffee,2025-11-01,2025-11-30,10,Loyalty Double Points,True
+12,Winter Warmer,2,Coffee,2025-11-01,2025-11-30,10,Loyalty Double Points,True
+12,Winter Warmer,3,Coffee,2025-11-01,2025-11-30,10,Loyalty Double Points,True
+12,Winter Warmer,4,Coffee,2025-11-01,2025-11-30,10,Loyalty Double Points,True
+12,Winter Warmer,5,Coffee,2025-11-01,2025-11-30,10,Loyalty Double Points,True
+12,Winter Warmer,6,Coffee,2025-11-01,2025-11-30,10,Loyalty Double Points,True
+12,Winter Warmer,7,Coffee,2025-11-01,2025-11-30,10,Loyalty Double Points,True
+12,Winter Warmer,8,Coffee,2025-11-01,2025-11-30,10,Loyalty Double Points,True
+12,Winter Warmer,9,Coffee,2025-11-01,2025-11-30,10,Loyalty Double Points,True
+12,Winter Warmer,10,Coffee,2025-11-01,2025-11-30,10,Loyalty Double Points,True
+13,Local Deal - Loyalty Double Points,1,Coffee,2024-07-13,2024-07-21,25,Loyalty Double Points,False
+14,Local Deal - Seasonal Special,1,Snacks,2025-03-09,2025-03-22,10,Seasonal Special,False
+15,Local Deal - Meal Deal,1,Coffee,2025-10-31,2025-11-17,10,Meal Deal,False
+16,Local Deal - 20% Off,1,Coffee,2024-12-13,2025-01-01,15,20% Off,False
+17,Local Deal - Meal Deal,1,Snacks,2024-07-13,2024-07-28,15,Meal Deal,False
+18,Local Deal - BOGOF,1,Snacks,2024-07-06,2024-07-17,15,BOGOF,False
+19,Local Deal - BOGOF,1,Bakery,2025-03-29,2025-04-17,10,BOGOF,False
+20,Local Deal - Meal Deal,2,Cold Drinks,2024-01-16,2024-01-24,15,Meal Deal,False
+21,Local Deal - BOGOF,2,Cold Drinks,2025-05-12,2025-05-26,25,BOGOF,False
+22,Local Deal - Loyalty Double Points,2,Coffee,2024-06-17,2024-06-30,25,Loyalty Double Points,False
+23,Local Deal - 20% Off,2,Snacks,2025-04-10,2025-04-21,25,20% Off,False
+24,Local Deal - Happy Hour,2,Cold Drinks,2024-07-13,2024-07-24,10,Happy Hour,False
+25,Local Deal - BOGOF,2,Sandwiches,2025-07-09,2025-07-16,10,BOGOF,False
+26,Local Deal - BOGOF,2,Bakery,2025-08-21,2025-09-04,15,BOGOF,False
+27,Local Deal - Happy Hour,2,Cold Drinks,2025-06-04,2025-06-12,10,Happy Hour,False
+28,Local Deal - BOGOF,3,Cold Drinks,2025-11-22,2025-12-12,25,BOGOF,False
+29,Local Deal - Happy Hour,3,Bakery,2025-08-06,2025-08-16,10,Happy Hour,False
+30,Local Deal - Loyalty Double Points,3,Bakery,2024-03-24,2024-04-06,20,Loyalty Double Points,False
+31,Local Deal - Loyalty Double Points,3,Sandwiches,2024-07-28,2024-08-14,15,Loyalty Double Points,False
+32,Local Deal - Loyalty Double Points,4,Sandwiches,2024-05-14,2024-05-31,25,Loyalty Double Points,False
+33,Local Deal - BOGOF,4,Snacks,2024-03-15,2024-03-22,10,BOGOF,False
+34,Local Deal - 20% Off,4,Bakery,2025-07-04,2025-07-14,20,20% Off,False
+35,Local Deal - Loyalty Double Points,4,Coffee,2024-12-23,2025-01-13,15,Loyalty Double Points,False
+36,Local Deal - Happy Hour,4,Snacks,2024-10-18,2024-10-27,20,Happy Hour,False
+37,Local Deal - Seasonal Special,4,Coffee,2025-10-31,2025-11-15,20,Seasonal Special,False
+38,Local Deal - BOGOF,4,Cold Drinks,2024-04-16,2024-05-07,20,BOGOF,False
+39,Local Deal - Happy Hour,5,Sandwiches,2025-07-20,2025-07-29,20,Happy Hour,False
+40,Local Deal - Seasonal Special,5,Sandwiches,2024-08-03,2024-08-21,15,Seasonal Special,False
+41,Local Deal - Loyalty Double Points,5,Sandwiches,2025-10-11,2025-10-31,25,Loyalty Double Points,False
+42,Local Deal - BOGOF,5,Snacks,2024-02-22,2024-03-01,20,BOGOF,False
+43,Local Deal - 20% Off,6,Cold Drinks,2024-12-07,2024-12-26,20,20% Off,False
+44,Local Deal - BOGOF,6,Snacks,2025-03-28,2025-04-12,10,BOGOF,False
+45,Local Deal - Loyalty Double Points,6,Cold Drinks,2024-03-18,2024-04-08,10,Loyalty Double Points,False
+46,Local Deal - 20% Off,6,Cold Drinks,2025-08-19,2025-09-03,25,20% Off,False
+47,Local Deal - 20% Off,7,Coffee,2024-11-11,2024-11-23,20,20% Off,False
+48,Local Deal - Happy Hour,7,Coffee,2025-11-29,2025-12-09,20,Happy Hour,False
+49,Local Deal - 20% Off,7,Cold Drinks,2025-02-20,2025-03-08,15,20% Off,False
+50,Local Deal - 20% Off,7,Snacks,2024-06-30,2024-07-21,10,20% Off,False
+51,Local Deal - 20% Off,8,Cold Drinks,2025-02-25,2025-03-16,20,20% Off,False
+52,Local Deal - 20% Off,8,Coffee,2024-04-20,2024-05-03,25,20% Off,False
+53,Local Deal - Loyalty Double Points,8,Snacks,2024-07-23,2024-08-12,20,Loyalty Double Points,False
+54,Local Deal - Meal Deal,8,Coffee,2024-08-21,2024-08-31,15,Meal Deal,False
+55,Local Deal - Loyalty Double Points,8,Coffee,2024-12-02,2024-12-13,20,Loyalty Double Points,False
+56,Local Deal - BOGOF,8,Snacks,2025-10-18,2025-11-02,20,BOGOF,False
+57,Local Deal - BOGOF,9,Bakery,2024-09-24,2024-10-03,20,BOGOF,False
+58,Local Deal - Seasonal Special,9,Snacks,2024-04-21,2024-05-07,20,Seasonal Special,False
+59,Local Deal - Meal Deal,9,Bakery,2024-11-17,2024-11-30,10,Meal Deal,False
+60,Local Deal - Seasonal Special,9,Sandwiches,2025-08-13,2025-08-23,10,Seasonal Special,False
+61,Local Deal - Loyalty Double Points,10,Bakery,2024-01-02,2024-01-17,15,Loyalty Double Points,False
+62,Local Deal - Seasonal Special,10,Sandwiches,2025-03-17,2025-03-25,20,Seasonal Special,False
+63,Local Deal - Seasonal Special,10,Sandwiches,2024-05-07,2024-05-25,20,Seasonal Special,False
+64,Local Deal - Happy Hour,10,Snacks,2025-02-22,2025-03-06,20,Happy Hour,False
+65,Local Deal - Seasonal Special,10,Snacks,2024-05-10,2024-05-20,25,Seasonal Special,False
+66,Local Deal - Meal Deal,10,Bakery,2024-06-27,2024-07-13,20,Meal Deal,False
+67,Local Deal - Loyalty Double Points,10,Coffee,2025-07-15,2025-08-04,20,Loyalty Double Points,False

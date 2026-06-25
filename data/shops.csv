@@ -1,0 +1,11 @@
+shop_id,shop_name,location,shop_type,region,size_sqft,seating_capacity
+1,City Central,City Centre,High Street,North,1200,40
+2,Westside Corner,Suburb West,Neighbourhood,West,800,20
+3,Station Stop,Train Station,Transport Hub,North,600,10
+4,Park Lane Cafe,Park Area,High Street,South,1000,35
+5,Eastgate Express,Suburb East,Drive-Through,East,1500,15
+6,Riverside Roast,Riverside,Destination,South,1800,60
+7,Airport Terminal,Airport,Transport Hub,West,700,25
+8,Uni Quarter,University,Campus,East,900,30
+9,Retail Park Hub,Retail Park,Retail Park,North,1100,20
+10,Old Town Brew,Old Town,High Street,South,950,30
