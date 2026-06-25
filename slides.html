@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Forecasting – Executive Summary</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #1a1a2e; }
+
+  .slide {
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 40px;
+  }
+
+  /* ── SLIDE 1 ── */
+  #s1 { background: #0f0f23; }
+
+  #s1 .header {
+    background: linear-gradient(135deg, #1e3a5f 0%, #0d2137 100%);
+    padding: 36px 60px 28px;
+    border-bottom: 3px solid #e8a020;
+  }
+  #s1 .header .eyebrow {
+    font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+    color: #e8a020; font-weight: 600; margin-bottom: 8px;
+  }
+  #s1 .header h1 {
+    font-size: 36px; color: #ffffff; font-weight: 700; line-height: 1.15;
+  }
+  #s1 .header h1 span { color: #e8a020; }
+
+  #s1 .body {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    padding: 40px 60px;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .col-head {
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase;
+    font-weight: 700; margin-bottom: 20px; padding-bottom: 10px;
+    border-bottom: 2px solid;
+  }
+  .col-head.old { color: #e05050; border-color: #e05050; }
+  .col-head.new { color: #40c98a; border-color: #40c98a; }
+
+  .old-col { display: flex; flex-direction: column; gap: 14px; }
+  .new-col { display: flex; flex-direction: column; gap: 14px; }
+
+  .fact-row {
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  .fact-icon {
+    width: 28px; height: 28px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; flex-shrink: 0; margin-top: 2px;
+  }
+  .fact-icon.bad  { background: rgba(224,80,80,0.15); color: #e05050; }
+  .fact-icon.good { background: rgba(64,201,138,0.15); color: #40c98a; }
+
+  .fact-text { color: #ccd6f6; font-size: 15px; line-height: 1.5; }
+  .fact-text strong { color: #ffffff; font-size: 16px; display: block; margin-bottom: 2px; }
+
+  .divider {
+    display: flex; align-items: center; justify-content: center;
+  }
+  .arrow-line {
+    width: 2px; height: 100%; background: #2a3a5c;
+    position: relative; margin: 0 auto;
+  }
+  .arrow-circle {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: #e8a020; position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; color: #0f0f23; font-weight: 900;
+  }
+
+  #s1 .footer {
+    padding: 16px 60px;
+    background: rgba(232,160,32,0.08);
+    border-top: 1px solid rgba(232,160,32,0.2);
+    display: flex; align-items: center; gap: 16px;
+  }
+  #s1 .footer .tag {
+    background: #e8a020; color: #0f0f23; font-size: 11px; font-weight: 800;
+    letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px;
+  }
+  #s1 .footer p { color: #8892b0; font-size: 13px; }
+  #s1 .footer p strong { color: #e8a020; }
+
+  /* ── SLIDE 2 ── */
+  #s2 { background: #0a1628; }
+
+  #s2 .header {
+    background: linear-gradient(135deg, #0d2137 0%, #0a1628 100%);
+    padding: 32px 60px 24px;
+    border-bottom: 3px solid #40c98a;
+  }
+  #s2 .header .eyebrow {
+    font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+    color: #40c98a; font-weight: 600; margin-bottom: 8px;
+  }
+  #s2 .header h1 { font-size: 34px; color: #ffffff; font-weight: 700; }
+  #s2 .header h1 span { color: #40c98a; }
+
+  #s2 .body {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    padding: 0;
+  }
+
+  .metrics-panel {
+    padding: 36px 44px;
+    display: flex; flex-direction: column; gap: 20px;
+    border-right: 1px solid #1e3a5f;
+  }
+  .panel-label {
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: #40c98a; font-weight: 700; margin-bottom: 4px;
+  }
+
+  .metric-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 18px 22px;
+    display: flex; align-items: center; gap: 20px;
+  }
+  .metric-card .big {
+    font-size: 42px; font-weight: 800; line-height: 1;
+    flex-shrink: 0;
+  }
+  .metric-card .big.green  { color: #40c98a; }
+  .metric-card .big.blue   { color: #4db8ff; }
+  .metric-card .big.gold   { color: #e8a020; }
+  .metric-card .label-block .title {
+    font-size: 15px; color: #ffffff; font-weight: 600; margin-bottom: 3px;
+  }
+  .metric-card .label-block .sub {
+    font-size: 12.5px; color: #8892b0; line-height: 1.4;
+  }
+  .metric-card .label-block .sub em { color: #40c98a; font-style: normal; font-weight: 600; }
+
+  .horizon-panel {
+    padding: 36px 44px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+
+  .horizon-row {
+    display: flex; flex-direction: column; gap: 5px;
+  }
+  .horizon-header {
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .horizon-label { font-size: 13px; color: #ccd6f6; font-weight: 600; }
+  .horizon-pct   { font-size: 13px; color: #8892b0; }
+  .horizon-pct span { color: #ffffff; font-weight: 700; }
+
+  .bar-track {
+    height: 10px; background: rgba(255,255,255,0.07); border-radius: 5px; overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%; border-radius: 5px;
+    background: linear-gradient(90deg, #40c98a, #4db8ff);
+  }
+  .bar-fill.old-bar { background: #e05050; }
+
+  .horizon-note { font-size: 11px; color: #8892b0; margin-top: -4px; }
+
+  .cat-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 4px;
+  }
+  .cat-pill {
+    background: rgba(64,201,138,0.1);
+    border: 1px solid rgba(64,201,138,0.25);
+    border-radius: 6px; padding: 7px 12px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .cat-pill .cat-name { font-size: 12px; color: #ccd6f6; }
+  .cat-pill .cat-mape { font-size: 13px; font-weight: 700; color: #40c98a; }
+
+  #s2 .footer {
+    padding: 14px 60px;
+    background: rgba(64,201,138,0.06);
+    border-top: 1px solid rgba(64,201,138,0.15);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  #s2 .footer .left { display: flex; align-items: center; gap: 14px; }
+  #s2 .footer .tag {
+    background: #40c98a; color: #0a1628; font-size: 11px; font-weight: 800;
+    letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px;
+  }
+  #s2 .footer p { color: #8892b0; font-size: 12.5px; }
+  #s2 .footer p strong { color: #ccd6f6; }
+  #s2 .footer .right { color: #8892b0; font-size: 11.5px; text-align: right; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     SLIDE 1: OLD VS NEW
+═══════════════════════════════════════════════════════════════════ -->
+<div class="slide" id="s1">
+
+  <div class="header">
+    <div class="eyebrow">Sales Forecasting Transformation</div>
+    <h1>From Manual Guesswork to <span>Machine-Precision Forecasting</span></h1>
+  </div>
+
+  <div class="body">
+
+    <!-- OLD -->
+    <div class="old-col">
+      <div class="col-head old">&#9664; Before — Manual GM Forecasting</div>
+
+      <div class="fact-row">
+        <div class="fact-icon bad">✕</div>
+        <div class="fact-text">
+          <strong>2 hours per GM, every Thursday</strong>
+          10 GMs × 52 weeks = 1,040 hours of management time per year spent on spreadsheets
+        </div>
+      </div>
+
+      <div class="fact-row">
+        <div class="fact-icon bad">✕</div>
+        <div class="fact-text">
+          <strong>Total shop sales only</strong>
+          No visibility into which categories are driving demand — Coffee, Sandwiches, Cold Drinks all lumped together
+        </div>
+      </div>
+
+      <div class="fact-row">
+        <div class="fact-icon bad">✕</div>
+        <div class="fact-text">
+          <strong>35% of days within ±5% accuracy</strong>
+          65% of forecasts missed by more than 5% — leading to overstaffing, waste and stockouts
+        </div>
+      </div>
+
+      <div class="fact-row">
+        <div class="fact-icon bad">✕</div>
+        <div class="fact-text">
+          <strong>2-week horizon, produced weekly</strong>
+          Slow cadence, no ability to react to weather or promotional changes mid-week
+        </div>
+      </div>
+
+      <div class="fact-row">
+        <div class="fact-icon bad">✕</div>
+        <div class="fact-text">
+          <strong>Inconsistent across shops</strong>
+          Forecast quality varied entirely by individual GM skill and experience
+        </div>
+      </div>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="divider">
+      <div class="arrow-line">
+        <div class="arrow-circle">→</div>
+      </div>
+    </div>
+
+    <!-- NEW -->
+    <div class="new-col">
+      <div class="col-head new">After ▶ AI-Powered Demand Forecasting</div>
+
+      <div class="fact-row">
+        <div class="fact-icon good">✓</div>
+        <div class="fact-text">
+          <strong>Fully automated — runs overnight</strong>
+          Zero GM time. Forecasts refresh daily with no manual input required
+        </div>
+      </div>
+
+      <div class="fact-row">
+        <div class="fact-icon good">✓</div>
+        <div class="fact-text">
+          <strong>Predicted by category, by shop, by day</strong>
+          Coffee, Cold Drinks, Sandwiches, Snacks and Bakery forecast independently — enabling precise ordering and staffing
+        </div>
+      </div>
+
+      <div class="fact-row">
+        <div class="fact-icon good">✓</div>
+        <div class="fact-text">
+          <strong>63% of days within ±5% at shop level</strong>
+          90% within ±10% — nearly doubling the accuracy of manual forecasting
+        </div>
+      </div>
+
+      <div class="fact-row">
+        <div class="fact-icon good">✓</div>
+        <div class="fact-text">
+          <strong>Up to 12-week horizon</strong>
+          Stable forecasts maintained out to 84 days, enabling longer-range planning and supplier negotiations
+        </div>
+      </div>
+
+      <div class="fact-row">
+        <div class="fact-icon good">✓</div>
+        <div class="fact-text">
+          <strong>Consistent and explainable</strong>
+          Same methodology across all 10 shops, incorporating weather, promotions, holidays and media spend automatically
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="tag">Key Outcome</div>
+    <p>GMs reclaim <strong>1,040 hours/year</strong> of management time &nbsp;·&nbsp; Forecast accuracy nearly <strong>doubles</strong> &nbsp;·&nbsp; Category-level visibility <strong>unlocked for the first time</strong></p>
+  </div>
+
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     SLIDE 2: ACCURACY IN DETAIL
+═══════════════════════════════════════════════════════════════════ -->
+<div class="slide" id="s2">
+
+  <div class="header">
+    <div class="eyebrow">Model Performance — Test Results</div>
+    <h1>Accuracy at Every Horizon: <span>How Reliable Is the Forecast?</span></h1>
+  </div>
+
+  <div class="body">
+
+    <!-- LEFT: headline metrics -->
+    <div class="metrics-panel">
+      <div class="panel-label">Headline Accuracy — Shop Total Sales per Day</div>
+
+      <div class="metric-card">
+        <div class="big green">63%</div>
+        <div class="label-block">
+          <div class="title">of daily shop forecasts within ±5%</div>
+          <div class="sub">vs <em>35%</em> with manual GM forecasting — nearly double the precision</div>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="big blue">90%</div>
+        <div class="label-block">
+          <div class="title">within ±10% of actual</div>
+          <div class="sub">9 out of 10 shop-days land within 10% — suitable for <em>staffing &amp; stock decisions</em></div>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="big gold">5.4%</div>
+        <div class="label-block">
+          <div class="title">average error (MAPE)</div>
+          <div class="sub">If a shop sells 400 units on a day, the forecast is typically <em>within 22 units</em></div>
+        </div>
+      </div>
+
+      <div style="margin-top:4px;">
+        <div class="panel-label" style="margin-bottom:10px;">Accuracy by Category (avg error)</div>
+        <div class="cat-grid">
+          <div class="cat-pill"><span class="cat-name">Coffee</span><span class="cat-mape">9.5%</span></div>
+          <div class="cat-pill"><span class="cat-name">Sandwiches</span><span class="cat-mape">8.9%</span></div>
+          <div class="cat-pill"><span class="cat-name">Snacks</span><span class="cat-mape">8.7%</span></div>
+          <div class="cat-pill"><span class="cat-name">Bakery</span><span class="cat-mape">8.9%</span></div>
+          <div class="cat-pill" style="grid-column: span 2;"><span class="cat-name">Cold Drinks</span><span class="cat-mape">12.5% &nbsp;(most weather-sensitive)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: horizon bars -->
+    <div class="horizon-panel">
+      <div class="panel-label">How Accuracy Holds Up Over Time — Shop Total Sales</div>
+      <div style="font-size:12px; color:#8892b0; margin-top:-8px; margin-bottom:6px;">% of forecasts within ±10% of actual, by week ahead</div>
+
+      <!-- Old baseline -->
+      <div class="horizon-row">
+        <div class="horizon-header">
+          <span class="horizon-label" style="color:#e05050;">Previous (Manual GM) — 2-week horizon</span>
+          <span class="horizon-pct"><span>35%</span> within ±5%</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill old-bar" style="width:35%"></div></div>
+        <div class="horizon-note">Total shop only · produced weekly · 2 hours GM time each</div>
+      </div>
+
+      <div style="border-top: 1px solid #1e3a5f; margin: 4px 0;"></div>
+
+      <div class="horizon-row">
+        <div class="horizon-header">
+          <span class="horizon-label">Week 1 &nbsp;<span style="color:#8892b0; font-size:11px; font-weight:400;">(days 1–7)</span></span>
+          <span class="horizon-pct"><span>83%</span> within ±10%</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:83%"></div></div>
+        <div class="horizon-note">Lag inputs are real actuals — highest confidence window</div>
+      </div>
+
+      <div class="horizon-row">
+        <div class="horizon-header">
+          <span class="horizon-label">Week 2 &nbsp;<span style="color:#8892b0; font-size:11px; font-weight:400;">(days 8–14)</span></span>
+          <span class="horizon-pct"><span>91%</span> within ±10%</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:91%"></div></div>
+        <div class="horizon-note">Equivalent horizon to current GM process — far more accurate</div>
+      </div>
+
+      <div class="horizon-row">
+        <div class="horizon-header">
+          <span class="horizon-label">Week 4 &nbsp;<span style="color:#8892b0; font-size:11px; font-weight:400;">(days 22–28)</span></span>
+          <span class="horizon-pct"><span>89%</span> within ±10%</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:89%"></div></div>
+        <div class="horizon-note">Monthly horizon — supports supplier &amp; staffing planning</div>
+      </div>
+
+      <div class="horizon-row">
+        <div class="horizon-header">
+          <span class="horizon-label">Week 8 &nbsp;<span style="color:#8892b0; font-size:11px; font-weight:400;">(days 50–56)</span></span>
+          <span class="horizon-pct"><span>91%</span> within ±10%</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:91%"></div></div>
+        <div class="horizon-note">2-month horizon — seasonal baseline remains strong</div>
+      </div>
+
+      <div class="horizon-row">
+        <div class="horizon-header">
+          <span class="horizon-label">Week 12 &nbsp;<span style="color:#8892b0; font-size:11px; font-weight:400;">(days 78–84)</span></span>
+          <span class="horizon-pct"><span>87%</span> within ±10%</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:87%"></div></div>
+        <div class="horizon-note">Model degrades gracefully — still outperforms manual at any horizon</div>
+      </div>
+
+      <div style="background: rgba(64,201,138,0.07); border:1px solid rgba(64,201,138,0.2); border-radius:8px; padding:12px 16px; margin-top:6px;">
+        <div style="font-size:12.5px; color:#ccd6f6; line-height:1.6;">
+          <strong style="color:#40c98a;">Key insight:</strong> Accuracy is nearly flat from week 1 to week 12. The model uses a stable 28-day rolling baseline that anchors forecasts even at long horizons — errors compound slowly, not exponentially.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="left">
+      <div class="tag">Validated</div>
+      <p>Results from <strong>6-month holdout test</strong> (Jul–Dec 2025) · 9,150 shop×category×day predictions · Closed days excluded</p>
+    </div>
+    <div class="right">Model: LightGBM · Features: weather, promotions,<br>holidays, pricing, media spend, seasonal lags</div>
+  </div>
+
+</div>
+
+</body>
+</html>
